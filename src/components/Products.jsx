@@ -15,7 +15,7 @@ const Products = ({handelClick}) => {
                             <button className="btn"> 12 to 18 month</button>
                             <button className="btn">18 to 24 month</button>
                             <button className="btn">2 to 5 year</button>
-                            <button className="btn">5 to 8 years</button>
+                            <button className="btn">5 to 7 years</button>
                         </div>
                     </div>
                     <Product_Compo handelClick={handelClick}/>
