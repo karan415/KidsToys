@@ -35,7 +35,7 @@ return (
                     </div>
                     <div className="col">
                         <div className="testimonial_inner">
-                            <img src={img5} alt="" />
+                            <img src={img5} alt="464756" />
                         </div>
                     </div>
                 </div>
