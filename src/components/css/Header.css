@@ -1,0 +1,18 @@
+.submenus {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 0px 5px -2px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.submenus ul li {
+    display: block;
+    padding: 10px 0px;
+}
+.search_box li {
+    list-style: none;
+    font-size: 25px;
+    color: #fc76a9;
+    padding: 4px;
+    margin: 0px;
+}

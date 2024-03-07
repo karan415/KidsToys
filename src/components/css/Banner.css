@@ -1,0 +1,51 @@
+section.banner{
+    background-image: url(../images/Banner.png);
+    background-size: cover;
+    background-position: center;
+    padding: 220px 100px ;
+}
+.banner_content {
+    max-width: 800px;
+    margin-left: 159px;
+}
+.banner_content h4 {
+    text-align: left;
+}
+section.banner .react-multiple-carousel__arrow--left {
+    left: 0px;
+    background: #be79ec;
+    min-height: 60px;
+    border: 1px dashed #fc76a9;
+    min-width: 60px;
+}
+
+section.banner .react-multiple-carousel__arrow--right{
+right: 0px;
+    background: #be79ec;
+    min-height: 60px;
+    border: 1px dashed #fc76a9;
+    min-width: 60px;
+}
+@media(max-width:767px){
+    section.banner {
+        padding: 20px;
+      }
+      .banner_content {
+        margin-left: 0px;
+    }
+}
+@media(min-width:768px) and (max-width:1024px){
+    section.banner {
+        padding: 120px 48px;
+    }
+    
+    h1 {
+        font-size: 60px;
+        line-height: 58px;
+    }
+    
+    .banner_content {
+        max-width: 396px;
+    }
+   
+}

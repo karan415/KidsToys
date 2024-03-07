@@ -1,0 +1,119 @@
+.row_box.footer_boxes {
+    grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 30px;
+}
+
+.footer_inner_box ul li {
+    color: #000;
+    font-family: "poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+
+.footer_inner_box ul li:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.flex_box.footer_boxes {
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer .input_box {
+    width: 100%;
+}
+
+.footer_inner_box span {
+    color: #000;
+    font-family: "poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: lowercase;
+}
+
+footer .search_box {
+    margin: 10px 0px;
+}
+.copy-right p {
+    color: #000;
+    text-align: center;
+}
+
+.copy-right {
+    padding: 30px;
+    border-top: 2px dashed;
+}
+footer p{
+    color: #000;
+}
+
+.footer_inner_box ul li.under_line {
+    color: #000;
+    font-family: "poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-transform: lowercase;
+}
+
+.footer_inner_box ul li strong {
+    color: #000;
+    font-family: "poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
+}
+.social_icons ul li {
+    display: inline-block;
+    border: 2px dotted;
+    border-radius: 100%;
+    margin: 3px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 8px;
+}
+footer {
+    border-top: 4px dotted #000;
+    padding: 60px 0px 0px;
+}
+.flex_box.footer_boxes {
+    padding-bottom: 50px;
+}
+@media(max-width:1024px){
+    .flex_box.footer_boxes {
+        display: block;
+    }
+    .footer_inner_box.mb_flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .col_20 {
+        width: 100%;
+    }
+    
+    .col_40.flex_box {
+        width: 100%;
+    }
+    
+    footer {
+        padding: 20px;
+    }
+    
+    .footer_inner_box {
+        margin: 10px 0px;
+    }
+    .blog_content {
+        margin: 15px 0px 0px;
+    }
+}

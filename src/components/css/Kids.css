@@ -1,0 +1,39 @@
+
+section.kids_section .row_box {
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 0px;
+}
+
+.inner_img {
+    max-width: 242px;
+}
+@media(max-width:767px){
+    section.kids_section .row_box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 23px;
+    }
+    section.testimonial {
+        padding: 100px 28px 28px !important;
+    }
+    section.kids_section .row_box .col:nth-child(2) .inner_img {
+        max-width: 108px;
+        display: flex;
+        justify-content: end;
+    }
+    section.kids_section .row_box .col {
+        display: inline-grid;
+        justify-content: center;
+    }
+    section.kids_section {
+        padding: 20px;
+    }
+}
+@media(min-width:768px) and (max-width:1024px){
+    .kids_inner {
+        padding: 20px;
+    }
+    section.kids_section .row_box {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 25px;
+    }
+}

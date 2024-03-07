@@ -1,0 +1,117 @@
+.tabing_box.flex_box {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 61px;
+    padding: 7px 10px;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+button.btn {
+    border: none;
+    background: none;
+    color: #000;
+}
+
+button.btn.active {
+    background: #be79ec;
+    color: #fff;
+    padding: 13px 20px;
+    border-radius: 39px;
+}
+
+button.btn:hover {
+    background: #be79ec;
+    color: #fff;
+    padding: 13px 20px;
+    border-radius: 39px;
+}
+
+section.our-products {
+    padding: 50px;
+}
+
+.product_img img {
+    max-width: 200px;
+}
+
+.product_box.row_box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+}
+
+.product_img.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28.372px;
+    background: rgba(190, 121, 236, 0.56);
+    box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.product_content.col span {
+    display: block;
+    color: #000;
+    text-align: center;
+    font-family: "poppins";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+strong {
+    color: #FC76A9;
+    font-weight: 900;
+}
+.flex_box.products {
+    gap: 39px 15px;
+    flex-wrap: wrap;
+}
+
+.flex_box.products .col_25 {
+    width: 24%;
+}
+i.star img {
+    max-width: 140px;
+    margin: 0 auto;
+}
+.product_content.col span.border {
+    margin-top: 15px;
+}
+section.singal_product_info .product_description {
+    text-align: left;
+}
+
+section.singal_product_info h5.light_pink {
+    text-align: left;
+}
+@media(max-width:767px){
+    section.our-products {
+        padding: 15px;
+    }
+    .flex_box.products .col_25 {
+        width: 47%;
+    }
+    .tabing_box.flex_box {
+        overflow: hidden;
+    }
+    .product_box.row_box {
+        grid-template-rows: 1fr;
+        padding-bottom: 20px;
+    }
+    i.star img {
+        max-width: 98px;
+    }
+}
+@media(min-width:768px) and (max-width:1024px){
+    section.our-products {
+        padding: 30px;
+    }
+    
+    .flex_box.products .col_25 {
+        width: 48%;
+    }
+}

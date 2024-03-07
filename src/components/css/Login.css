@@ -1,0 +1,195 @@
+.formloginwithregister {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fc76a947;
+    border-radius: 24px;
+}
+
+section.myaccount {
+    padding: 80px 0px;
+}
+.logo.flex_box {
+    justify-content: center;
+    padding: 30px;
+}
+
+.tabing_form.flex_box {
+    padding: 30px 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px -2px;
+    gap: 15px;
+}
+
+button.btn_blue.w-100 {
+    background: #0E79EF;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+button.btn_black.w-100 {
+    background: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+.tabing_form.flex_box button {
+    border-radius: 10px;
+}
+
+.columnfull input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin: 10px 0px;
+}
+
+
+section.myaccount label {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+section.myaccount h6 {
+    text-transform: lowercase;
+    font-family: inter;
+    padding: 16px 0px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #fb1d71;
+}
+
+h5.underline {
+    text-transform: capitalize;
+    text-align: right;
+    cursor: pointer;
+}
+
+span.underline {
+    color: #fb1d71;
+}
+
+section.myaccount h2 {
+    padding: 0px;
+    color: #fb1d71;
+    font-weight: 900;
+}
+
+.before_line h6::before {
+    content: '';
+    height: 2px;
+    width: 46%;
+    position: absolute;
+    background: #ff116b;
+    left: 0;
+    top: 29px;
+}
+.before_line h6::after {
+    content: '';
+    height: 2px;
+    width: 46%;
+    position: absolute;
+    background: #ff116b;
+    right: 0;
+    top: 29px;
+}
+
+.before_line h6 {
+    position: relative;
+    text-transform: uppercase !important;
+}
+.login_form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px -2px;
+}
+button.btn_normal.w-100 {
+    border-radius: 10px;
+    border: 2px solid #db0e5c;
+    background: #fff;
+    color: #000;
+    padding: 9px;
+    margin: 11px 0px;
+}
+
+.login_form button.btn_pink.w-100 {
+    border-radius: 10px;
+}
+.white_background {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px -3px;
+    border-radius: 14px;
+    padding: 30px;
+}
+section.myaccount label span.pink {
+    color: #ff0263;
+}
+.tabing_password ul.flex_box {
+    justify-content: start;
+    gap: 13px;
+}
+
+.tabing_password li {
+    font-weight: 700;
+    font-family: 'Patrick Hand';
+    font-size: 34px;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+.bg_white {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px -2px;
+    margin: 10px 0px;
+}
+.bg_white p{
+    color:#000;
+}
+@media(max-width:767px){
+    .formloginwithregister {
+        max-width: 100%;
+        padding: 10px;
+    }
+    
+    .white_background {
+        max-width: 100%;
+        padding: 10px;
+    }
+    
+    .tabing_form.flex_box {
+        display: block;
+        padding: 10px;
+    }
+    
+    .login.col_50 {
+        margin: 10px 0px;
+    }
+    
+    .tabing_password li {
+        font-size: 19px;
+    }
+    section.myaccount {
+        padding: 20px 0px;
+    }
+    section.myaccount label {
+        font-size: 17px;
+    }
+}
