@@ -1,26 +1,23 @@
 section.banner{
-    background-image: url(../images/Banner.png);
     background-size: cover;
     background-position: center;
     padding: 220px 100px ;
 }
 .banner_content {
     max-width: 800px;
-    margin-left: 159px;
+    margin-left: 100px;
 }
 .banner_content h4 {
     text-align: left;
 }
-section.banner .react-multiple-carousel__arrow--left {
-    left: 0px;
+ button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
     background: #be79ec;
     min-height: 60px;
     border: 1px dashed #fc76a9;
     min-width: 60px;
 }
 
-section.banner .react-multiple-carousel__arrow--right{
-right: 0px;
+ button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right{
     background: #be79ec;
     min-height: 60px;
     border: 1px dashed #fc76a9;
@@ -33,11 +30,24 @@ right: 0px;
       .banner_content {
         margin-left: 0px;
     }
+    h1 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+    button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
+        min-height: 40px;
+        min-width: 40px;
+    }
+    
+     button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right{
+        min-height: 40px;
+        min-width: 40px;
+    }
 }
 @media(min-width:768px) and (max-width:1024px){
-    section.banner {
-        padding: 120px 48px;
-    }
+   section.banner {
+    padding: 126px 20px 74px;
+}
     
     h1 {
         font-size: 60px;
@@ -47,5 +57,30 @@ right: 0px;
     .banner_content {
         max-width: 396px;
     }
-   
+    .banner_content {
+        margin-left: 20px;
+    }
+}
+
+
+@media(min-width:576px) and (max-width:992px){
+    .banner_content {
+        margin-left: 0;
+    }
+}
+
+@media(min-width:1025px) and (max-width:1540px){
+    section.banner {
+        padding: 114px 20px 33px;
+    }
+    h1 {
+        font-size: 72px;
+        line-height: 69px;
+    }
+    .banner_content {
+        max-width: 565px;
+    }
+    .logo img {
+        max-width: 161px;
+    }
 }

@@ -19,6 +19,7 @@ section.new_toys {
     background-size: cover;
     background-position: top;
 }
+
 .bottom_box {
     text-align: center;
     display: flex;
@@ -44,38 +45,52 @@ span.toys {
     line-height: normal;
     text-transform: capitalize;
 }
+
 span.toys button.btn_purple {
     rotate: 3deg;
 }
-section.new_toys .flex_box .col_50:nth-child(1) .top_box {rotate: -4deg;}
+
+section.new_toys .flex_box .col_50:nth-child(1) .top_box {
+    rotate: -4deg;
+}
 
 section.new_toys .flex_box .col_50:nth-child(2) .top_box {
     rotate: 5deg;
 }
-@media(max-width:767px){
-    section.new_toys .flex_box {
-        display: block;
-    }
-    section.new_toys {
-        padding: 20px;
-    }
-    
+
+@media(max-width:767px) {
+   
+
     .col_50 {
         width: 100% !important;
     }
+
     .bottom_box {
         margin: 30px 0px;
         gap: 5px;
     }
+
+  section.new_toys {
+    padding: 20px 20px !important;
+}
+section.testimonial.kids_section.new_toys {
+    padding: 10px 0px !important;
+}
 }
 
-@media(min-width:768px) and (max-width:1024px){
+@media(min-width:768px) and (max-width:1024px) {
     section.new_toys {
-        padding: 40px;
+        padding: 40px 20px;
     }
-    
+
     h3 {
         font-size: 27px;
         line-height: 34px;
+    }
+}
+
+@media(max-width:575px) {
+    section.new_toys .flex_box {
+        display: block;
     }
 }

@@ -1,8 +1,8 @@
 import { FaEdit, FaTrash } from "react-icons/fa";
 import teddy from './images/pinkteddy.png';
 import teddy2 from './images/yellow_teddy.jpg';
-import teddy3  from './images/tedddy_red.png'
-import teddy4  from './images/redteddy2.png'
+import teddy3 from './images/tedddy_red.png'
+import teddy4 from './images/redteddy2.png'
 
 const CartData = [
     {
@@ -26,7 +26,7 @@ const CartData = [
         img: teddy2,
         item: "PLUSH PIG 30 CM",
         price: "$24.54",
-         quantity: {
+        quantity: {
             less: '-',
             more: "+",
             items: "1",
@@ -42,7 +42,7 @@ const CartData = [
         img: teddy3,
         item: "PLUSH PIG 30 CM",
         price: "$21",
-         quantity: {
+        quantity: {
             less: '-',
             more: "+",
             items: "1",
@@ -58,7 +58,7 @@ const CartData = [
         img: teddy4,
         item: "PLUSH PIG 30 CM",
         price: "$78",
-         quantity: {
+        quantity: {
             less: '-',
             more: "+",
             items: "1",
@@ -74,7 +74,7 @@ const CartData = [
         img: teddy,
         item: "PLUSH PIG 30 CM",
         price: "$23",
-         quantity: {
+        quantity: {
             less: '-',
             more: "+",
             items: "1",

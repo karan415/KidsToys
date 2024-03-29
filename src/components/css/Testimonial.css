@@ -63,9 +63,20 @@ section.testimonial.kids_section.new_toys {
     padding: 120px 0px 28px;
 }
 @media(max-width:767px){
-    .main_testimonilal {
-        padding: 0px;
-    }
+   .main_testimonilal {
+    padding: 40px 0px 0px;
+}
+.box2_inner {
+    padding: 20px;
+    margin: 10px;
+}
+
+.rating {
+    margin: 0px;
+}
+.kids_testimonial {
+    padding: 40px 0px;
+}
 }
 @media(min-width:768px) and (max-width:1024px){
     section.testimonial.kids_section.new_toys {

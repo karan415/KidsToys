@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Patrick+Hand&display=swap');
 
 @media(min-width:1700px) {
@@ -25,6 +24,7 @@ ul {
   padding: 0px;
   margin: 0px;
 }
+
 i.star {
   text-align: center;
 }
@@ -47,16 +47,18 @@ header {
   padding: 30px;
   position: relative;
 }
+
 header::after {
   content: '';
   height: 50px;
   width: 100%;
   position: absolute;
-  background-image: url('./components/images/HEADER__2.png');
+  background-image: url(http://localhost:3000/Kidstoys/static/media/HEADER__2.5fa6124da3aebca6eee3.png);
   background-size: contain;
   background-position: center;
   left: 0;
-  bottom: -32px;
+  bottom: -34px;
+  z-index: 9980;
 }
 
 .col_20 {
@@ -157,7 +159,7 @@ h6 {
   color: rgba(0, 0, 0, 0.76);
   text-align: center;
   font-family: "poppins";
-  font-size: 22px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -172,9 +174,11 @@ h6 {
 .gap_30 {
   gap: 70px;
 }
+
 .gap_20 {
   gap: 20px;
 }
+
 p {
   color: #FFF;
   font-family: "poppins";
@@ -202,13 +206,13 @@ button.btn_purple {
 }
 
 button {
-    text-align: center;
-    font-family: 'Patrick Hand';
-    font-size: 21px;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: capitalize;
-    color: #fff;
+  text-align: center;
+  font-family: 'Patrick Hand';
+  font-size: 21px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #fff;
 }
 
 strong.light {
@@ -377,84 +381,31 @@ nav ul li {
 a {
   text-decoration: none;
 }
-@media(max-width:768px) {
 
- .toggle_items {
-    position: absolute;
-    left: 0;
-    float: left;
-    width: 100%;
-    background: #bf65ff;
-    padding: 10px;
-    z-index: 9999;
-}
+@media(max-width:575px) {
 
-  .toggle_items ul li {
-    display: block;
-    color: #fff;
-    padding: 8px 0px;
-    border-bottom: 1px solid;
-  }
 
-  button.toggle_btn {
-    border: none;
-    background: none;
-    max-width: 35px;
-  }
 
-  .col_50.content_end {
-    display: flex;
-    justify-content: end;
-  }
-
-  .OnlyDesktop {
-    display: none;
-  }
-
-  .onlyMobile {
-    display: block !important;
-  }
-
-  header {
-    background: none;
-    padding: 20px;
-    position: relative;
-  }
-}
-
-.d_none {
-  display: none;
-}
-
-.onlyMobile {
-  display: none;
-}
-
-@media(max-width:767px) {
   .row_box {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  header::after {
-    height: 10px;
-    bottom: 1px;
-}
 
-  .logo img {
-    max-width: 106px;
-}
-  h1 {
-    font-size: 51px;
-    line-height: 58px;
-  }
+
+
 
   h3 {
     font-size: 24px;
     line-height: 33px;
   }
 
+  h4 {
+    font-size: 22px;
+  }
+
   h2 {
-    font-size: 35px;
+    font-size: 27px;
+    padding-bottom: 10px;
   }
 
   .col {
@@ -462,13 +413,12 @@ a {
   }
 
   button {
-    font-size: 15px;
+    font-size: 18px;
     padding: 1px;
   }
 
   button.btn_purple {
-    width: 100%;
-    padding: 10px;
+    padding: 10px 25px;
   }
 
   h5 {
@@ -480,23 +430,87 @@ a {
   }
 }
 
+.d_none {
+  display: none;
+}
+
+.onlyMobile {
+  display: none;
+}
+
+@media(max-width:992px) {
+  header::after {
+    height: 12px;
+    bottom: -8px;
+  }
+
+  .logo img {
+    max-width: 106px;
+  }
+
+  .col_50.content_end {
+    display: flex;
+    justify-content: end;
+  }
+
+  header {
+    background: none;
+    padding: 10px;
+    position: relative;
+  }
+
+  .toggle_items {
+    position: absolute;
+    left: 0;
+    float: left;
+    width: 100%;
+    background: #bf65ff;
+    padding: 10px;
+    z-index: 9999;
+  }
+
+  .toggle_items ul li {
+    display: block;
+    color: #fff;
+    padding: 8px 0px;
+    border-bottom: 1px solid;
+  }
+
+  .toggle_btn {
+    border: none;
+    background: none;
+    max-width: 35px;
+  }
+
+  .OnlyDesktop {
+    display: none;
+  }
+
+  .onlyMobile {
+    display: block !important;
+  }
+}
+
 @media(min-width:768px) and (max-width:1024px) {
   button {
     font-size: 16px;
   }
 }
-.col_75{
+
+.col_75 {
   width: 75%;
 }
 
 h2.text-center {
   text-align: center !important;
 }
-input::placeholder{
+
+input::placeholder {
   font: 16px;
   color: #ccc;
   font-family: 'poppins';
 }
+
 button.btn_pink:hover {
   background: #fff;
   border: 2px solid #ef13a6;
@@ -504,16 +518,21 @@ button.btn_pink:hover {
   transition: 1s;
   cursor: pointer;
 }
-section.banner .react-multiple-carousel__arrow--left:hover,section.banner .react-multiple-carousel__arrow--right:hover {
+
+section.banner .react-multiple-carousel__arrow--left:hover,
+section.banner .react-multiple-carousel__arrow--right:hover {
   background: transparent;
 }
+
 .img_box:hover {
   transform: translate(10px, 10px);
   transition: 1s;
 }
+
 input {
   outline: none;
 }
+
 span.cartItem {
   position: absolute;
   background: #eb6db0;
@@ -528,9 +547,18 @@ span.cartItem {
   color: #fff;
 }
 
+a {
+  color: #000;
+}
+
 .search_box li {
   position: relative;
 }
+
+.product_content {
+  text-align: center;
+}
+
 .cart_empty {
   width: 100%;
   background: linear-gradient(42deg, #a643b9, #ff56c161);
@@ -544,4 +572,22 @@ span.cartItem {
   font-size: 30px;
   text-transform: capitalize;
   font-weight: 600;
+}
+
+.tabing-mobile ul li {
+  text-align: left;
+  font-size: 15px;
+  line-height: 31px;
+}
+
+.tabing-mobile {
+  background: #f7ccda;
+  width: auto;
+  padding: 10px;
+}
+
+.kidsproduct img {
+  max-width: 155px;
+  height: 100px;
+  object-fit: contain;
 }
