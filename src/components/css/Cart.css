@@ -5,7 +5,7 @@ section.cartpage {
 
 .maincart {
     background: #fff;
-    border-radius: 50px;
+    border-radius: 20px;
     padding: 30px;
 }
 
@@ -207,4 +207,40 @@ section.cartpage h2 {
         width: 23%;
     }
 
+}
+
+@media(min-width:768px) and (max-width:992px){
+    .maincart {
+        padding: 15px;
+    }
+    section.cartpage {
+        padding: 30px 10px;
+    }
+    .maincart .flex_box {
+        gap: 10px;
+    }
+    table.itemstable tbody tr {
+        padding: 5px;
+    }
+    .quantity {
+        padding: 5px 1px;
+    }
+    .white_bg {
+        padding: 9px;
+        width: 61px;
+        height: 61px;
+        overflow: hidden;
+    }
+    table.itemstable tbody tr td {
+        font-size: 18px;
+    }
+    .item_info h5 {
+        font-size: 19px;
+    }
+    .items_information {
+        padding: 10px;
+    }
+    table.itemstable thead tr th {
+        font-size: 19px;
+    }
 }

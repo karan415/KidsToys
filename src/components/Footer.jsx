@@ -59,7 +59,7 @@ const Footer = () => {
 
                                 </ul>
                                 </div>
-                                <div className='col_50'>
+                                <div className='col_50 none-border'>
                                 <ul>
                                     <li>Reviews</li>
                                     <li>Return Policy</li>

@@ -17,7 +17,9 @@ section.kids_section .row_box {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 23px;
     }
-   
+    .kids_inner ul.react-multi-carousel-track li {
+        text-align: center;
+    }
     section.kids_section .row_box .col:nth-child(2) .inner_img {
         max-width: 108px;
         display: flex;

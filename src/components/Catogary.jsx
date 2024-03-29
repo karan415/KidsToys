@@ -9,17 +9,17 @@ const Catogary = () => {
 
     const responsive = {
         desktop: {
-            breakpoint: { max: 3000, min: 1024 },
+            breakpoint: { max: 3000, min: 993 },
             items: 5,
             slidesToSlide: 2 // optional, default to 1.
         },
         tablet: {
-            breakpoint: { max: 1024, min: 701 },
+            breakpoint: { max: 992, min: 501 },
             items: 3,
             slidesToSlide: 2 // optional, default to 1.
         },
         mobile: {
-            breakpoint: { max: 700, min: 0 },
+            breakpoint: { max: 500, min: 0 },
             items: 2,
             slidesToSlide: 1 // optional, default to 1.
         }

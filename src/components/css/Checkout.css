@@ -143,12 +143,12 @@ section.checkout_page .flex_box {
 
 }
 
-
-
-@media(max-width:767px) {
+@media(max-width:992px) {
     section.checkout_page .flex_box {
-        display: block;
-    }
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }   
+    
 
     section.checkout_page .col_60 {
         width: 100%;
@@ -158,6 +158,10 @@ section.checkout_page .flex_box {
         width: 100%;
     }
 
+
+}
+
+@media(max-width:600px) {
     .pay_method {
         padding: 12px;
     }
@@ -177,20 +181,58 @@ section.checkout_page .flex_box {
     .images_box.flex_box img {
         max-width: 60px;
     }
+
     .order_details {
         width: 100%;
         overflow: scroll;
         padding: 10px;
     }
-    
+
     .billing_details .flex_box .col_50 label {
         font-size: 16px;
     }
+
     .billing_details .flex_box .col_50 input {
         padding: 11px;
         margin: 5px 0px;
     }
+
     .column.checkboxx label {
         font-size: 16px;
+    }
+}
+
+@media(min-width:576px) and (max-width:992px) {
+    section.checkout_page .col_60 {
+        display: flex;
+        gap: 23px;
+    }
+
+    section.checkout_page {
+        padding: 20px;
+    }
+
+    .pay_method {
+        padding: 10px;
+    }
+
+    section.checkout_page .billing_details .flex_box,
+    section.checkout_page .pay_method .flex_box {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    section.checkout_page .billing_details .flex_box .col_50,
+    section.checkout_page .pay_method .flex_box .col_50 {
+        width: 48.566%;
+    }
+
+    .billing_details {
+        padding: 10px;
+    }
+
+    .billing_details .flex_box .col_50 label {
+        font-size: 13px;
     }
 }
