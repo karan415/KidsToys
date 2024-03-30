@@ -86,12 +86,6 @@ section.related_products h2 {
     color: #ff0061;
 }
 
-.product_description h5 {
-    text-align: left;
-    font-weight: bold;
-    color: #ff0061;
-}
-
 ul.inline_block li {
     display: inline-block;
     border: 1px dashed #fc76a9;
@@ -453,4 +447,7 @@ i.like {
     color: red;
     padding-right: 10px;
     font-size: 31px;
+}
+.offer_page.bg_white.shadow .product_description h5 {
+    text-align: center !important;
 }

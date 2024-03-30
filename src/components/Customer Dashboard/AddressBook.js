@@ -30,7 +30,7 @@ const AddressBook = () => {
                 </div>
               </div>
             </div>
-            {address.map((item, index) => {
+            {address.map((item) => {
               return (
                 <>
                   <div className="col_50">

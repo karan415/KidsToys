@@ -57,5 +57,9 @@ section.catogary {
     h6 {
         font-size: 17px;
     }
-  
+    .catogary_box ul.react-multi-carousel-track li {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
 }

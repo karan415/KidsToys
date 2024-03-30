@@ -53,7 +53,7 @@ header::after {
   height: 50px;
   width: 100%;
   position: absolute;
-  background-image: url(http://localhost:3000/Kidstoys/static/media/HEADER__2.5fa6124da3aebca6eee3.png);
+  background-image: url(./components/images/HEADER__2.png);
   background-size: contain;
   background-position: center;
   left: 0;
@@ -469,12 +469,14 @@ a {
     z-index: 9999;
   }
 
-  .toggle_items ul li {
+.toggle_items ul li {
     display: block;
     color: #fff;
-    padding: 8px 0px;
     border-bottom: 1px solid;
-  }
+    font-size: 17px;
+    padding: 12px 0px;
+    font-family: 'Poppins';
+}
 
   .toggle_btn {
     border: none;
@@ -591,3 +593,4 @@ a {
   height: 100px;
   object-fit: contain;
 }
+

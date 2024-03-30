@@ -67,6 +67,7 @@ const Topbar = () => {
           </div>
           <div className="col_50 content_end">
             <div className="onlyMobile">
+            
               <img src={toggle} alt="" onClick={toggleNav} />
               
             </div>
@@ -109,7 +110,6 @@ const Topbar = () => {
         </div>
         <div className="tabing_body">
           <div className="tab_heading">
-            <img src="" alt="" />
             <h4 className=''>{tabNames[activeTab]}{activeTab}</h4>
           </div>
           {tabComponents[activeTab]}

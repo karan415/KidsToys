@@ -15,7 +15,7 @@ const Catogary = () => {
         },
         tablet: {
             breakpoint: { max: 992, min: 501 },
-            items: 3,
+            items: 4,
             slidesToSlide: 2 // optional, default to 1.
         },
         mobile: {
