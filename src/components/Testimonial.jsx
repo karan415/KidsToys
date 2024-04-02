@@ -1,4 +1,3 @@
-
 import React from 'react'
 import MainTestimonial from './MainTestimonial'
 import img1 from './images/testimonial_2.png'
@@ -85,4 +84,3 @@ const Testimonial = () => {
     );
 };
 export default Testimonial;
->>>>>>> master
