@@ -81,3 +81,8 @@ section.productslisting {
     gap: 12px;
     align-items: center;
 }
+span.mrp {
+    text-decoration: line-through;
+    text-decoration-color: #ccc;
+    color: #ccc !important;
+}

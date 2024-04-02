@@ -37,10 +37,7 @@ export const CartProvider = ({ children }) => {
           setQuantities(prevQuantities => [...prevQuantities, 1]);
         }
     
-        setAddedItem(curElm);
-        setTimeout(() => {
-          setAddedItem(null);
-        }, 2000);
+       
       };
     // Compute cart count based on the length of the cart array
     const cartCount = cart.length;

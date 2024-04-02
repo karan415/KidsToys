@@ -16,7 +16,7 @@ const ProductHead = () => {
                         <div className="product_content col">
                             <span>{curElm.product}</span>
                             <i className="star"><img src={curElm.rating} alt="" /></i>
-                            <span className='flex_box'><strong>${curElm.price}</strong> <span className="saleprize">${curElm.saleprice}</span></span>
+                            <span className='flex_box'><strong>${curElm.saleprice}</strong> <span className="mrp">${curElm.price }</span></span>
                             <span className="border"><button className="btn_purple" onClick={() => handleAddToCart(curElm)}>{addedItem === curElm ? 'Item added to cart' : 'Add To Cart'} </button></span>
                         </div>
                     </div>
