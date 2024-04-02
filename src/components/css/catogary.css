@@ -1,5 +1,5 @@
 .img_box {
-    max-width: 90px;
+    max-width: 70px;
     margin: 0 auto;
 }
 section.catogary {
@@ -8,12 +8,22 @@ section.catogary {
 .col_20inner.row_box {
     grid-template-columns: auto;
 }
+.catogary_box {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.col_20inner.row_box {
+    grid-row-gap: 0;
+}
 
 @media(max-width:767px){
-    
-    section.catogary {
-        padding: 40px 15px;
+    .img_box img {
+        height: 83px;
+        object-fit: contain;
     }
+   section.catogary {
+    padding: 30px 0px;
+}
     .flex_box.catogary_box {
         gap: 20px;
         flex-wrap: wrap;
@@ -22,6 +32,13 @@ section.catogary {
     
     .flex_box.catogary_box .col_20 {
         width: 46%;
+    }
+    .catogary_box ul.react-multi-carousel-track .flex_box {
+        display: block;
+        text-align: center;
+    }
+    h5 {
+        font-size: 18px;
     }
 }
 @media(min-width:768px) and (max-width:1024px){
@@ -40,5 +57,14 @@ section.catogary {
     h6 {
         font-size: 17px;
     }
-  
+    .catogary_box ul.react-multi-carousel-track li {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media(min-width:1025px) and (max-width:1500px){
+    .content_box h5 {
+        font-size: 21px;
+    }
 }

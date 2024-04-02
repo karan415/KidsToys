@@ -1,5 +1,6 @@
 section.singal_product_info p {
     color: #000;
+    font-size: 17px;
 }
 
 section.singal_product_info {
@@ -20,6 +21,7 @@ section.related_products {
     background: #fc76a9;
     border-radius: 20px;
     padding: 20px;
+    text-align: center;
 }
 
 section.related_products h2 {
@@ -78,12 +80,6 @@ section.related_products h2 {
 .product_description h2 {
     text-align: left;
     padding: 0;
-}
-
-.product_description h5 {
-    text-align: left;
-    font-weight: bold;
-    color: #ff0061;
 }
 
 .product_description h5 {
@@ -277,12 +273,18 @@ i.d_box.shipping_info::before {
 i.d_box.compo_care::before {
     background-image: url(../images/composition.png);
 }
+.onlyMb{
+    display: none;
+}
 
 @media(max-width:992px) {
-    .flex_box.gap_30.align_start {
-        display: block;
+   
+    .product_imgs img {
+        height: auto;
+        max-width: 32px;
+        text-align: center;
+        margin: 0 auto;
     }
-
     .onlyDesktop {
         display: none;
     }
@@ -291,7 +293,7 @@ i.d_box.compo_care::before {
     padding: 30px !important;
 }
     section.singal_product_info {
-        padding: 20px;
+        padding: 20px 10px;
     }
 
     .related_imgs .flex_box.gap_20 {
@@ -299,9 +301,7 @@ i.d_box.compo_care::before {
         gap: 10px;
     }
 
-    .related_imgs .flex_box.gap_20 .col_25 {
-        width: 48%;
-    }
+   
 
     .Product_relates {
         padding: 20px;
@@ -342,7 +342,35 @@ i.d_box.compo_care::before {
         justify-content: start;
     }
 }
-
+@media(max-width:800px){
+    section.singal_product_info .col_50 {
+        width: 100%;
+    }
+    .onlyMb{
+        display: block;
+    }
+    .flex_box.gap_30.align_start {
+        display: block;
+    }
+    .onlyDesk{
+    display: none;
+    }
+    .col_25 {
+        width: 23%;
+    }
+  
+}
+@media(min-width:800px) and (max-width:1540px){
+    section.singal_product_info .flex_box.gap_30.align_start {
+        gap: 20px;
+    }
+    section.singal_product_info {
+        padding: 40px 20px;
+    }
+    section.checkout_page {
+        padding: 40px 20px;
+    }
+}
 /* table css start here */
 table.addtional_info_table {
     width: 100%;
@@ -365,9 +393,9 @@ table.addtional_info_table th {
 
 .user_img {
     max-width: 84px;
-    background: #ccccccb8;
     border-radius: 100%;
     padding: 10px;
+    border: 1px solid;
 }
 
 .review_form h2 {
@@ -431,10 +459,9 @@ table.addtional_info_table th {
     margin: 10px 0px;
 }
 .item_less_more {
-    max-width: 113px;
-    border: 2px solid;
-    padding: 12px;
-    border-radius: 5px;
+    border: 1px solid #fc76a9;
+    padding: 9px;
+    border-radius: 4px;
 }
 
 .review_column.flex_box {
@@ -453,4 +480,97 @@ i.like {
     color: red;
     padding-right: 10px;
     font-size: 31px;
+}
+.offer_page.bg_white.shadow .product_description h5 {
+    text-align: center !important;
+}
+
+@media(max-width:575px){
+    .product_imgs {
+        padding: 18px 6px;
+    }
+    .related_imgs .flex_box.gap_20 .col_25 {
+        width: 23%;
+    }
+    .related_imgs .flex_box.gap_20 {
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+
+    .product_imgs{
+        text-align: center;
+    }
+    .flex_box.border-bottom .col_33 {
+        width:auto;
+    }
+    .item_less_more {
+        padding: 6px;
+    }
+    .flex_box.border-bottom {
+        padding: 10px 0px;
+    }
+    .flex_box.border-bottom .column {
+        padding: 0;
+    }
+    .description {
+        margin: 0;
+    }
+   .add.less.flex_box span {
+    padding: 2px 7px !important;
+    margin: 1px !important;
+    font-size: 12px;
+}
+    .flex_box.border-bottom .column p {
+        font-size: 13px !important;
+        padding: 0;
+    }
+    .prize_box span {
+        font-size: 12px;
+    }
+    .info_tags h6 {
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    .info_tags h6 i.tag::before {
+        height: 19px;
+        width: 19px;
+        left: -29px;
+    }
+    ul.inline_block li {
+        height: 30px;
+        width: 30px;
+        padding: 7px 7px;
+        font-size: 13px;
+    }
+    .delivery_box ul li {
+        font-size: 16px;
+    }
+    .delivery_box ul li i.d_box::before {
+        height: 19px;
+        width: 19px;
+        left: 9px;
+    }
+    .user_img {
+        max-width: 56px;
+    }
+    .review_box {
+        padding: 20px 6px;
+    }
+    .rating_bar {
+        max-width: 74px;
+    }
+    .formbox {
+        padding: 20px 10px;
+    }
+}
+.add.less.flex_box span {
+    padding: 0px 10px;
+    background: #fc76a9;
+    margin: 2px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.review_form button.btn_pink {
+    margin-top: 15px;
 }

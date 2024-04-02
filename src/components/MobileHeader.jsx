@@ -25,20 +25,20 @@ const MobileHeader = () => {
 
       </div>
       {isNavOpen && (
-      <div className="toggle_items">
+        <div className="toggle_items">
           <div className="menues">
             <ul>
-              <li>home<FaCaretDown /></li>
-              <li>shop<FaCaretDown /></li>
-              <li>products<FaCaretDown /></li>
-              <li>blogs<FaCaretDown /></li>
-              <li>pages<FaCaretDown /></li>
+              <li>home</li>
+              <li>shop</li>
+              <li>products</li>
+              <li>blogs</li>
+              <li>pages</li>
             </ul>
           </div>
-          </div>
-          )}
-          
-      
+        </div>
+      )}
+
+
     </>
   )
 }

@@ -39,6 +39,9 @@ button.simple_btn {
     section.character_shop .row_box {
         grid-template-columns: repeat(1, 1fr);
     }
+    section.character_shop {
+        padding: 20px 0px;
+    }
     .star_bg_inner {
         padding: 100px 30px;
     }
@@ -46,5 +49,11 @@ button.simple_btn {
 @media(min-width:768px) and (max-width:1024px){
     .star_bg_inner {
         padding: 30px;
+    }
+}
+
+@media(min-width:1025px) and (max-width:1400px){
+    .star_bg_inner {
+        padding: 126px 20px;
     }
 }

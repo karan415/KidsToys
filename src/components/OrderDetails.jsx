@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useCart } from '../CartContext';
 
 const OrderDetails = () => {
@@ -31,8 +31,6 @@ const OrderDetails = () => {
                     <thead>
                         <tr>
                             <th>product</th>
-                            <th>price</th>
-                            <th>quantity</th>
                             <th>subtotal</th>
                         </tr>
                     </thead>
@@ -41,17 +39,10 @@ const OrderDetails = () => {
                             <tr key={index}>
                                 <td>
                                     <div className="item_info">
-                                        <div className="white_bg">
-                                            <img src={item.image} alt="" />
-                                        </div>
-                                        <h5>{item.product}</h5>
+                                        <h5>{item.product}<span className="itemnumber"> ({quantities[index]})</span></h5>
                                     </div>
                                 </td>
-                                <td>${item.price}</td>
                                 <td>
-                                    <div className="quantity">
-                                        <span className="itemnumber">{quantities[index]}</span>
-                                    </div>
                                 </td>
                                 <td>${(quantities[index] * parseFloat(item.price)).toFixed(2)}</td>
                             </tr>

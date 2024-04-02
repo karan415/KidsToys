@@ -63,9 +63,20 @@ section.testimonial.kids_section.new_toys {
     padding: 120px 0px 28px;
 }
 @media(max-width:767px){
-    .main_testimonilal {
-        padding: 0px;
-    }
+   .main_testimonilal {
+    padding: 40px 0px 0px;
+}
+.box2_inner {
+    padding: 20px;
+    margin: 10px;
+}
+
+.rating {
+    margin: 0px;
+}
+.kids_testimonial {
+    padding: 40px 0px;
+}
 }
 @media(min-width:768px) and (max-width:1024px){
     section.testimonial.kids_section.new_toys {
@@ -74,5 +85,50 @@ section.testimonial.kids_section.new_toys {
     
     .main_testimonilal {
         padding: 30px 0px 0px;
+    }
+}
+@media(min-width:576px) and (max-width:992px){
+    section.new_toys .flex_box {
+        gap: 13px;
+    }
+
+.box1_inner h4 {
+    text-align: left;
+    font-size: 24px;
+}
+
+.box1_inner h2 {
+    text-align: left !important;
+    font-size: 27px;
+    line-height: 29px;
+}
+
+section.new_toys .col_33 {
+    width: 33.33%;
+}
+
+section.new_toys .col_70 {
+    width: 67%;
+}
+
+.box2_inner p {
+    font-size: 15px;
+    line-height: normal;
+}
+
+.box1_inner {
+    padding: 0px 0px 0px 21px;
+}
+
+.customers ul li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+}
+
+@media(max-width:1500px){
+    .testimonial_inner {
+        margin: 10px;
     }
 }

@@ -3,7 +3,7 @@ import orderData from './OrdersTabel'
 import searchicon from '../images/searchicon.png'
 import filtericon from '../images/filter.png'
 import MobileProduct from './MobileProduct'
-
+import { IoFilterSharp } from "react-icons/io5";
 const OrderHistory = () => {
   const [tabelData, setTabelData] = useState(orderData)
   return (
@@ -32,14 +32,8 @@ const OrderHistory = () => {
                 <input type="search" name="" id="" placeholder='type to filter orders' />
               </div>
               <div className="searchfilters">
-
-                <input type="submit" value="filters" />
-                <div className="filter_img">
-                <img src={filtericon} alt="" />
-                </div>
+                <button className="btn-normal"><IoFilterSharp />Filter</button>
               </div>
-
-
             </form>
           </div>
           <div className="order_detail">
@@ -47,8 +41,6 @@ const OrderHistory = () => {
             <table className="allordertabel onlyDesktop">
               <thead>
                 <tr>
-                 
-                 
                   <th>order id</th>
                   <th>date</th>
                   <th>product</th>
@@ -64,7 +56,7 @@ const OrderHistory = () => {
                       <tr id={item.id} key={index}>
                       <td>{item.orderId}</td>
                       <td>{item.date}</td>
-                        <td><div className="product_des"><h4>{item.product.title}</h4></div></td>
+                        <td>{item.product.title}</td>
                         <td>{item.address}</td>
                         <td>{item.price}</td>
                         <td>{item.status}</td>
