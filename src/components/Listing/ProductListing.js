@@ -4,6 +4,7 @@ import Footer from '../Footer'
 import Topbar from './Topbar'
 import HeaderBanner from '../HeaderBanner'
 import '../css/Listing.css'
+import ProductHead from '../ProductHead'
 const ProductListing = () => {
     return (
         <>
@@ -17,7 +18,9 @@ const ProductListing = () => {
               <Topbar />
               </div>
               <div className="col_75">
-              
+                    <div className="listingbody">
+                    <ProductHead/>
+                    </div>
               </div>
             </div>
             </div>

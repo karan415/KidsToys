@@ -1,4 +1,4 @@
-// Product_Compo.js
+
 import React, { useContext } from 'react';
 import { useCart } from '../CartContext';
 import { proContext } from './ProductContext';

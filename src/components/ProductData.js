@@ -10,8 +10,9 @@ const ProductData = {
                 id: 0,
                 image: Product_img,
                 product: "BABY’S FIRST BLOCK SET",
-                price: "24.89",
+                price: "34.89",
                 rating:star,
+                saleprice:'25.34'
             },
             {
                 id: 1,
@@ -19,20 +20,23 @@ const ProductData = {
                 product: "BABY’S FIRST BLOCK SET",
                 price: "24.89",
                 rating:star,
+                saleprice:'15.34'
             },
             {
                 id: 2,
                 image: Product_img2,
                 product: "BABY’S FIRST BLOCK SET",
-                price: "24.89",
+                price: "44.89",
                 rating:star,
+                saleprice:'34.34'
             },
             {
                 id: 3,
                 image: Product_img3,
                 product: "BABY’S FIRST BLOCK SET",
-                price: "24.89",
+                price: "40.89",
                 rating:star,
+                saleprice:'25.34'
             },
     ],
     '18month':[
@@ -40,15 +44,17 @@ const ProductData = {
             id: 0,
             image: Product_img,
             product: "BABY’S FIRST BLOCK SET",
-            price: "24.89",
+            price: "40.00",
             rating:star,
+            saleprice:'25.34'
         },
         {
             id: 1,
             image: Product_img1,
             product: "BABY’S FIRST BLOCK SET",
-            price: "24.89",
+            price: "44.89",
             rating:star,
+            saleprice:'28.34'
         },
 ],
 '24month':[
@@ -56,15 +62,17 @@ const ProductData = {
         id: 0,
         image: Product_img,
         product: "BABY’S FIRST BLOCK SET",
-        price: "24.89",
+        price: "29.89",
         rating:star,
+        saleprice:'15.34'
     },
     {
         id: 1,
         image: Product_img1,
         product: "BABY’S FIRST BLOCK SET",
-        price: "24.89",
+        price: "28.89",
         rating:star,
+        saleprice:'17.34'
     },
 ],
 '2year':[
@@ -74,6 +82,7 @@ const ProductData = {
         product: "BABY’S FIRST BLOCK SET",
         price: "24.89",
         rating:star,
+        saleprice:'12.34'
     },
     {
         id: 1,
@@ -81,6 +90,7 @@ const ProductData = {
         product: "BABY’S FIRST BLOCK SET",
         price: "24.89",
         rating:star,
+        saleprice:'15.34'
     },
 ],
 '5year':[
@@ -88,8 +98,9 @@ const ProductData = {
         id: 0,
         image: Product_img,
         product: "BABY’S FIRST BLOCK SET",
-        price: "24.89",
+        price: "44.89",
         rating:star,
+        saleprice:'25.34'
     },
     {
         id: 1,
@@ -97,6 +108,7 @@ const ProductData = {
         product: "BABY’S FIRST BLOCK SET",
         price: "24.89",
         rating:star,
+        saleprice:'15.34'
     },
 ]
 }

@@ -17,7 +17,11 @@ section.productslisting {
     border-bottom: 2px dotted #8956ff;
     margin-bottom: 20px;
 }
-
+.listing-inner span {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
 .listing-inner ul li {
     font-size: 18px;
     text-transform: capitalize;
@@ -25,18 +29,44 @@ section.productslisting {
     border-bottom: 2px dotted #ccc;
 }
 
-.listing-inner input {
+.listing-inner #searchitem {
     padding: 10px;
     border: 1px solid #Ccc;
     border-radius: 4px;
     width: 100%;
+    margin:0 0 20px 0px;
 }
-
-
-.listing-inner .flex_box {flex-wrap: wrap;justify-content: space-between;}
-
+.searchingbox {
+    position: relative;
+}
+.listing-inner .flex_box {
+    align-items: start;
+    gap: 30px;
+}
+.searchingbox label {
+    position: absolute;
+    right: 13px;
+    top: 9px;
+}
+.listing-inner input#vol {
+    border: 1px solid #Ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+.listing-inner .flex_box.content-end {
+    justify-content: end;
+    margin-top: 14px;
+}
+.listingbody .flex_box.products .col_25 {
+    width: 31%;
+}
 .listing-inner .flex_box .col_50 {
     width: 49%;
+}
+.listingbody {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 11px;
 }
 .listing-inner button.btn_pink {
     border-radius: 9px;
