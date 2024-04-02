@@ -10,7 +10,7 @@ import { CartProvider } from './CartContext'
 import SingalProduct from './components/Singal/SingalProduct'
 import "react-multi-carousel/lib/styles.css";
 import { ProProvider } from './components/ProductContext'
-import Topbar from './components/Listing/Topbar'
+import ProductListing from './components/Listing/ProductListing'
 const App = () => {
   return (
     <CartProvider>
@@ -24,7 +24,7 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/forgotpassword' element={<ForgotPassword />} />
           <Route path='/order' element={<CustomerDashboard />} />
-          <Route path='/list' element={<Topbar />} />
+          <Route path='/list' element={<ProductListing />} />
 
         </Routes>
       </Router>
