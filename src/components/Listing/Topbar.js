@@ -48,16 +48,6 @@ const Topbar = () => {
                 </div>
                     <div className="listing-box">
                         <div className="listing-inner">
-                            <h4>COLORS</h4>
-                            <ul>
-                            <li>red</li>
-                            <li>pink</li>
-                            <li>green</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="listing-box">
-                        <div className="listing-inner">
                             <h4>BRAND</h4>
                             <ul>
                                 <li>Barbie</li>
