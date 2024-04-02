@@ -6,7 +6,7 @@ export const CartContext = createContext();
 export const useCart = () => useContext(CartContext);
 
 export const CartProvider = ({ children }) => {
-    const [addedItem, setAddedItem] = React.useState(null);
+  const [addedItem, setAddedItem] = React.useState(null);
     // Load cart data from localStorage
     const storedData = localStorage.getItem('cart');
     const storedQuantities = localStorage.getItem('cartQuantities');
@@ -43,7 +43,7 @@ export const CartProvider = ({ children }) => {
     const cartCount = cart.length;
 
     return (
-        <CartContext.Provider value={{ cart, setCart, quantities, setQuantities, cartCount,handleAddToCart }}>
+        <CartContext.Provider value={{ cart, setCart, quantities, setQuantities,setAddedItem,addedItem, cartCount,handleAddToCart }}>
             {children}
         </CartContext.Provider>
     );

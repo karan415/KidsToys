@@ -86,3 +86,7 @@ span.mrp {
     text-decoration-color: #ccc;
     color: #ccc !important;
 }
+.product_content.col span.border button.btn_purple a {
+    text-align: end;
+    margin-left: 15px;
+}
