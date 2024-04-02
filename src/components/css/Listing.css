@@ -75,3 +75,9 @@ section.productslisting {
     gap: 11px;
     padding: 6px 22px;
 }
+.product_content span.flex_box {
+    display: flex !important;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+}
