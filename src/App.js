@@ -9,9 +9,11 @@ import CustomerDashboard from './components/Customer Dashboard/CustomerDashboard
 import { CartProvider } from './CartContext'
 import SingalProduct from './components/Singal/SingalProduct'
 import "react-multi-carousel/lib/styles.css";
+import { ProProvider } from './components/ProductContext'
 const App = () => {
   return (
     <CartProvider>
+    <ProProvider>
       <Router basename="/Kidstoys">
         <Routes>
           <Route path='/' element={<Home />} />
@@ -23,6 +25,7 @@ const App = () => {
           <Route path='/order' element={<CustomerDashboard />} />
         </Routes>
       </Router>
+      </ProProvider>
     </CartProvider>
   )
 }

@@ -144,12 +144,8 @@ section.checkout_page .flex_box {
 }
 
 @media(max-width:992px) {
-    section.checkout_page .flex_box {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-    }   
-    
-
+ 
+  
     section.checkout_page .col_60 {
         width: 100%;
     }
@@ -158,14 +154,18 @@ section.checkout_page .flex_box {
         width: 100%;
     }
 
-
+    section.checkout_page .flex_box {
+        gap: 15px;
+    }
 }
 
 @media(max-width:600px) {
     .pay_method {
         padding: 12px;
     }
-
+    section.checkout_page .flex_box {
+        display: block;
+    }
     .column {
         padding: 10px;
     }
@@ -203,10 +203,7 @@ section.checkout_page .flex_box {
 }
 
 @media(min-width:576px) and (max-width:992px) {
-    section.checkout_page .col_60 {
-        display: flex;
-        gap: 23px;
-    }
+  
 
     section.checkout_page {
         padding: 20px;
@@ -234,5 +231,18 @@ section.checkout_page .flex_box {
 
     .billing_details .flex_box .col_50 label {
         font-size: 13px;
+    }
+}
+
+@media(min-width:993px) and (max-width:1300px){
+    .billing_details .flex_box .col_50 label {
+        font-size: 17px;
+    }
+    .order_details {
+        padding: 8px;
+    }
+    section.checkout_page h2 {
+        padding: 0px 0px 10px;
+        font-size: 30px;
     }
 }

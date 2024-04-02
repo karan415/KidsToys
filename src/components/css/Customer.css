@@ -1100,12 +1100,7 @@ textarea {
         flex-wrap: wrap;
     }
 
-    .mobile_products ul {
-        width: 47%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        margin: 10px;
-    }
+ 
 
     .mobile_products ul li {
         font-size: 17px;
@@ -1125,7 +1120,12 @@ textarea {
     .tabing_body {
         padding: 10px;
     }
-
+    .mobile_products ul {
+        width: 46%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin: 10px;
+    }
     .shareorder_body.shadow {
         padding: 10px;
     }

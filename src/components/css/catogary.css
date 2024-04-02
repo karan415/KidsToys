@@ -63,3 +63,8 @@ section.catogary {
         justify-content: center;
     }
 }
+@media(min-width:1025px) and (max-width:1500px){
+    .content_box h5 {
+        font-size: 21px;
+    }
+}

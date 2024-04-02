@@ -70,9 +70,7 @@ section.banner{
 }
 
 @media(min-width:1025px) and (max-width:1540px){
-    section.banner {
-        padding: 114px 20px 33px;
-    }
+  
     h1 {
         font-size: 72px;
         line-height: 69px;
@@ -82,5 +80,10 @@ section.banner{
     }
     .logo img {
         max-width: 161px;
+    }
+}
+@media(min-width:1025px) and (max-width:1400px){
+    section.banner {
+        padding: 118px 22px;
     }
 }

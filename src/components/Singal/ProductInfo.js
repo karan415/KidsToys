@@ -48,7 +48,7 @@ const ProductInfo = () => {
                   ))}
                 </div>
               </div>
-              <div className='onlyDesktop'><ProductTabing /></div>
+              <div className='onlyDesk'><ProductTabing /></div>
             </div>
             <div className="col_50">
               <div className="product_description">
@@ -57,13 +57,24 @@ const ProductInfo = () => {
                 <div className="rating_box">
                   <img src={star} alt="" />
                 </div>
+                <div className="colors">
+                <span className='bold'>colors</span>
+                <div className="boxes flex_box">
+                  <div className='box box_grey' onClick={showgrey}></div>
+                  <div className="box box_red" onClick={showRed}></div>
+                  <div className="box box_yellow" onClick={showYellow}></div>
+                  <div className="box box_pink" onClick={showPink}></div>
+                </div>
+            </div>
                 <div className='description'>
                   <p>Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra dignissim ut sed leo.
                     Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet
                     consequat nulla felis pharetra lacus.</p>
                 </div>
+               
                 <div className="flex_box border-bottom">
-                  <div className="col_33">
+                
+                  <div className="column">
                     <div className="quantity_box ">
                       <div className="item_less_more ">
                         <div className="add less flex_box">
@@ -73,11 +84,12 @@ const ProductInfo = () => {
                         </div>
                       </div>
                     </div>
+                    
                   </div>
-                  <div className="col_33">
+                  <div className="column">
                     <p className="upper_case">BUZZ LIGHTYEAR TALKING FIGURE</p>
                   </div>
-                  <div className="col_33 content_end">
+                  <div className="column content_end">
                     <div className='prize_box'>
                       <div className="prize"> <span className='bold'>$25.20</span></div>
                       <div className="stock">
@@ -90,15 +102,7 @@ const ProductInfo = () => {
                 <div className="wishlist flex_box">
                   <i className="like"><FaHeart/></i><span className='bold'>add to wishlist</span>
                 </div>
-                <div className="colors">
-                    <span className='bold'>colors</span>
-                    <div className="boxes flex_box">
-                      <div className='box box_grey' onClick={showgrey}></div>
-                      <div className="box box_red" onClick={showRed}></div>
-                      <div className="box box_yellow" onClick={showYellow}></div>
-                      <div className="box box_pink" onClick={showPink}></div>
-                    </div>
-                </div>
+               
                 <div className="info_tags">
                   <h6><i class="sku tag"></i>SKU: <strong>A0010</strong></h6>
                   <h6><i class="catogary tag"></i>CATEGORY:<strong>Action Toys</strong></h6>
@@ -123,7 +127,7 @@ const ProductInfo = () => {
               </div>
             </div>
 
-            <div className='onlyMobile'><ProductTabing /></div>
+            <div className='onlyMb'><ProductTabing /></div>
           </div>
         </div>
       </section>
