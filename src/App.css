@@ -101,7 +101,7 @@ header::after {
   text-transform: capitalize;
   font-family: 'Patrick Hand';
 }
-.coupenbox h5.coupon {
+ h5.coupon {
   color: green;
 }
 h2 {
