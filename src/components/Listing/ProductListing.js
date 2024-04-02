@@ -2,13 +2,16 @@ import React from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
 import Topbar from './Topbar'
-
+import HeaderBanner from '../HeaderBanner'
+import '../css/Listing.css'
 const ProductListing = () => {
     return (
         <>
             <Header />
+            <HeaderBanner/>
             <section className="productslisting">
             <div className="container">
+            <div className="listing-inner">
             <div className="flex_box">
               <div className="col_25">
               <Topbar />
@@ -16,6 +19,7 @@ const ProductListing = () => {
               <div className="col_75">
               
               </div>
+            </div>
             </div>
             </div>
             </section>

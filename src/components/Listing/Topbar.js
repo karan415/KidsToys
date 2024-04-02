@@ -27,14 +27,10 @@ const Topbar = () => {
                                     <input type="number" name="" id="" max="50" />
                                 </div>
                             </div>
-                            <button className="btn-pink">filter</button>
+                            <button className="btn_pink">filter</button>
                         </div>
                     </div>
-                    <div className="listing-box">
-                    <div className="listing-inner">
-                        <button className="btn-pink"><MdFilterList />filters</button>
-                    </div>
-                </div>
+                   
                     <div className="listing-box">
                         <div className="listing-inner">
                             <h4>AGE</h4>
@@ -46,11 +42,18 @@ const Topbar = () => {
                         </div>
                     </div>
                     <div className="listing-box">
+                    <div className="listing-inner">
+                        <button className="btn_pink"><MdFilterList />filters</button>
+                    </div>
+                </div>
+                    <div className="listing-box">
                         <div className="listing-inner">
                             <h4>COLORS</h4>
+                            <ul>
                             <li>red</li>
                             <li>pink</li>
                             <li>green</li>
+                            </ul>
                         </div>
                     </div>
                     <div className="listing-box">
