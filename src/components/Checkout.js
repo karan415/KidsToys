@@ -1,16 +1,20 @@
-import React from 'react'
-import BillingForm from './BillingForm'
-import OrderDetails from './OrderDetails'
-import Payment from './Payment'
-import './css/Checkout.css'
-import Header from './Header'
-import HeaderBanner from './HeaderBanner'
-import Footer from './Footer'
+import React, { useState } from 'react';
+import BillingForm from './BillingForm';
+import OrderDetails from './OrderDetails';
+import Payment from './Payment';
+import './css/Checkout.css';
+import Header from './Header';
+import HeaderBanner from './HeaderBanner';
+import Footer from './Footer';
+import { useCart } from '../CartContext';
+
 const Checkout = () => {
+const{discountMessage,discount,handleCouponApply,couponCode,setCouponCode} =useCart();
+
     return (
         <>
-        <Header/>
-        <HeaderBanner/>
+            <Header />
+            <HeaderBanner />
             <section className="checkout_page">
                 <div className="container">
                     <div className="flex_box">
@@ -31,23 +35,28 @@ const Checkout = () => {
                         <div className="col_40">
                             <div className="order_details">
                                 <h2>order details</h2>
-                                <OrderDetails />
-                                <div className="coupenbox">
-                                    <form action="">
-                                        <label htmlFor="">have coupen?</label>
-                                        <input type="text" placeholder='coupen code' />
+                                <OrderDetails discount={discount} />
+                                <div className="couponbox">
+                                    <form onSubmit={handleCouponApply}>
+                                        <label htmlFor="">Have a coupon?</label>
+                                        <input
+                                            type="text"
+                                            placeholder="Coupon code"
+                                            value={couponCode}
+                                            onChange={(e) => setCouponCode(e.target.value)}
+                                        />
                                         <input type="submit" value="Apply" />
                                     </form>
+                                    {discountMessage && <h5 className="coupon">{discountMessage}</h5>}
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </>
-    )
-}
+    );
+};
 
-export default Checkout
+export default Checkout;

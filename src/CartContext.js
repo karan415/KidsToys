@@ -41,9 +41,27 @@ export const CartProvider = ({ children }) => {
       };
     // Compute cart count based on the length of the cart array
     const cartCount = cart.length;
+    const [couponCode, setCouponCode] = useState('');
+    const [discountMessage, setDiscountMessage] = useState('');
+    const [discount, setDiscount] = useState(0);
 
+    const handleCouponApply = (e) => {
+        e.preventDefault();
+        const trimmedCouponCode = couponCode.trim().toLowerCase(); // Trim whitespace and convert to lowercase
+        if (trimmedCouponCode === 'yourcouponcode') { // Replace 'yourcouponcode' with your actual coupon code
+            setDiscount(0.1); // 10% discount
+            setDiscountMessage('Coupon applied: You got 10% discount on your order!');
+            setTimeout(() => {
+                setDiscountMessage('');
+            }, 4000);
+        } else {
+            setDiscount(0); // Reset discount
+            setDiscountMessage('Invalid coupon code');
+        }
+        setCouponCode(''); // Clear coupon code input
+    };
     return (
-        <CartContext.Provider value={{ cart, setCart, quantities, setQuantities,setAddedItem,addedItem, cartCount,handleAddToCart }}>
+        <CartContext.Provider value={{ cart, setCart, quantities,discountMessage,discount,couponCode,setCouponCode,handleCouponApply, setQuantities,setAddedItem,addedItem, cartCount,handleAddToCart }}>
             {children}
         </CartContext.Provider>
     );

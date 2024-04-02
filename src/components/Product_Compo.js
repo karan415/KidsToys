@@ -5,14 +5,14 @@ import { proContext } from './ProductContext';
 
 const Product_Compo = () => {
   const { AllData } = useContext(proContext);
-  const { handleAddToCart,addedItem, setAddedItem } = useCart();
+  const { handleAddToCart, addedItem, setAddedItem } = useCart();
 
   useEffect(() => {
-      if (addedItem) {
-          setTimeout(() => {
-              setAddedItem(null);
-          }, 3000);
-      }
+    if (addedItem) {
+      setTimeout(() => {
+        setAddedItem(null);
+      }, 3000);
+    }
   }, [addedItem]);
 
   return (
@@ -28,15 +28,15 @@ const Product_Compo = () => {
               <i className="star"><img src={curElm.rating} alt="" /></i>
               <span><strong>${curElm.price}</strong></span>
               <span className="border">
-              <button className="btn_purple">
-              {addedItem === curElm ? (<>Item added 
-                  <Link to='/cart'>view cart</Link>
-                  </>)  : <span  onClick={() => {
-                      handleAddToCart(curElm);
-                      setAddedItem(curElm);
+                <button className="btn_purple">
+                  {addedItem === curElm ? (<>Item added
+                    <Link to='/cart'>view cart</Link>
+                  </>) : <span onClick={() => {
+                    handleAddToCart(curElm);
+                    setAddedItem(curElm);
                   }}>Add To Cart</span>
                   }
-          </button>
+                </button>
               </span>
             </div>
           </div>

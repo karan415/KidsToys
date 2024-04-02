@@ -90,9 +90,3 @@ span.mrp {
     text-align: end;
     margin-left: 15px;
 }
-.product_content.col span.border button.btn_purple span {
-    color: #fff !important;
-    font-size: 18px;
-    text-transform: capitalize;
-    font-family: 'Patrick Hand';
-}

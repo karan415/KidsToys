@@ -95,7 +95,15 @@ header::after {
 .col_60 {
   width: 60%;
 }
-
+.product_content.col span.border button.btn_purple span {
+  color: #fff !important;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: 'Patrick Hand';
+}
+.coupenbox h5.coupon {
+  color: green;
+}
 h2 {
   font-size: 45px;
   color: #000;
