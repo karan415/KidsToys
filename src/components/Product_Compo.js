@@ -5,15 +5,15 @@ import { proContext } from './ProductContext';
 
 const Product_Compo = () => {
   const { AllData } = useContext(proContext);
-  const { handleAddToCart, addedItem, setAddedItem  } = useCart();
+  const { handleAddToCart,addedItem, setAddedItem } = useCart();
 
   useEffect(() => {
-    if (addedItem) {
-        setTimeout(() => {
-            setAddedItem(null);
-        }, 3000);
-    }
-}, [addedItem]);
+      if (addedItem) {
+          setTimeout(() => {
+              setAddedItem(null);
+          }, 3000);
+      }
+  }, [addedItem]);
 
   return (
     <div className="flex_box products">
@@ -28,11 +28,15 @@ const Product_Compo = () => {
               <i className="star"><img src={curElm.rating} alt="" /></i>
               <span><strong>${curElm.price}</strong></span>
               <span className="border">
-                <button className="btn_purple" onClick={() => handleAddToCart(curElm)}>
-                  {addedItem ? (
-                    <>Item added to cart <Link to='/cart'>view cart</Link></>
-                  ) : 'Add To Cart'}
-                </button>
+              <button className="btn_purple">
+              {addedItem === curElm ? (<>Item added 
+                  <Link to='/cart'>view cart</Link>
+                  </>)  : <span  onClick={() => {
+                      handleAddToCart(curElm);
+                      setAddedItem(curElm);
+                  }}>Add To Cart</span>
+                  }
+          </button>
               </span>
             </div>
           </div>

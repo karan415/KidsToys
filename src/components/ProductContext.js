@@ -10,7 +10,7 @@ const ProProvider = ({ children }) => {
     };
 
     // Fetch data based on activeTab
-    const AllData = ProductData.all[activeTab] || [];
+    const AllData = ProductData[activeTab] || [];
 
     return (
         <proContext.Provider value={{ activeTab,setActiveTab, handleTab, AllData }}>
