@@ -605,4 +605,6 @@ a {
   height: 100px;
   object-fit: contain;
 }
-
+.product_content.col span.border button.btn_purple:hover span {
+  color: black !important;
+}

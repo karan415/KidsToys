@@ -3,27 +3,7 @@ import { useCart } from '../CartContext';
 
 const OrderDetails = () => {
     const { cart, quantities } = useCart();
-    const{discount} =useCart();
-    // Calculate subtotal
-    const subtotal = cart.reduce((acc, item, index) => {
-        const itemPrice = parseFloat(item.price);
-        const itemQuantity = quantities[index];
-        if (!isNaN(itemPrice) && !isNaN(itemQuantity)) {
-            return acc + itemPrice * itemQuantity;
-        } else {
-            console.error('Invalid price or quantity');
-            return acc;
-        }
-    }, 0);
-
-    // Calculate total before applying discount
-    const totalBeforeDiscount = subtotal;
-
-    // Calculate discount amount
-    const discountAmount = totalBeforeDiscount * discount;
-
-    // Calculate total after discount
-    const total = totalBeforeDiscount - discountAmount;
+    const { subtotal, discountAmount, total } = useCart();
 
     return (
         <>

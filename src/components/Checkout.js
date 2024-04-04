@@ -9,7 +9,7 @@ import Footer from './Footer';
 import { useCart } from '../CartContext';
 
 const Checkout = () => {
-const{discountMessage,discount,handleCouponApply,couponCode,setCouponCode} =useCart();
+    const { discountMessage, discount, handleCouponApply, couponCode, setCouponCode } = useCart();
 
     return (
         <>
@@ -36,9 +36,9 @@ const{discountMessage,discount,handleCouponApply,couponCode,setCouponCode} =useC
                             <div className="order_details">
                                 <h2>order details</h2>
                                 <OrderDetails discount={discount} />
-                                <div className="couponbox">
-                                    <form onSubmit={handleCouponApply}>
-                                        <label htmlFor="">Have a coupon?</label>
+                                <div className="coupenbox">
+                                    <form action="" onSubmit={handleCouponApply}>
+                                        <label htmlFor="">have coupen?</label>
                                         <input
                                             type="text"
                                             placeholder="Coupon code"
@@ -47,8 +47,9 @@ const{discountMessage,discount,handleCouponApply,couponCode,setCouponCode} =useC
                                         />
                                         <input type="submit" value="Apply" />
                                     </form>
-                                    {discountMessage && <h5 className="coupon">{discountMessage}</h5>}
+                                    <span>{discountMessage && <h5 className="coupon">{discountMessage}</h5>}</span>
                                 </div>
+
                             </div>
                         </div>
                     </div>
