@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Kidstoys/static/css/main.e9ee8248.css",
-    "main.js": "/Kidstoys/static/js/main.b47ed733.js",
+    "main.css": "/Kidstoys/static/css/main.c7946f92.css",
+    "main.js": "/Kidstoys/static/js/main.0df8277b.js",
     "static/media/Banner.png": "/Kidstoys/static/media/Banner.a15ddf446eea317348c4.png",
     "static/media/teddy_girl.png": "/Kidstoys/static/media/teddy_girl.b635e4feced1b7020f93.png",
     "static/media/win_images.png": "/Kidstoys/static/media/win_images.637dae14763ed0e0f394.png",
@@ -54,11 +54,11 @@
     "static/media/HEADER__2.png": "/Kidstoys/static/media/HEADER__2.5fa6124da3aebca6eee3.png",
     "static/media/revicons.woff": "/Kidstoys/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Kidstoys/index.html",
-    "main.e9ee8248.css.map": "/Kidstoys/static/css/main.e9ee8248.css.map",
-    "main.b47ed733.js.map": "/Kidstoys/static/js/main.b47ed733.js.map"
+    "main.c7946f92.css.map": "/Kidstoys/static/css/main.c7946f92.css.map",
+    "main.0df8277b.js.map": "/Kidstoys/static/js/main.0df8277b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9ee8248.css",
-    "static/js/main.b47ed733.js"
+    "static/css/main.c7946f92.css",
+    "static/js/main.0df8277b.js"
   ]
 }

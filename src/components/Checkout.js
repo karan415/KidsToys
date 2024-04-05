@@ -4,6 +4,7 @@ import OrderDetails from './OrderDetails';
 import Payment from './Payment';
 import './css/Checkout.css';
 import Header from './Header';
+import ShippingForm from './ShippingForm'
 import HeaderBanner from './HeaderBanner';
 import Footer from './Footer';
 import { useCart } from '../CartContext';
@@ -21,9 +22,11 @@ const Checkout = () => {
                         <div className="col_60">
                             <div className="billing_form">
                                 <div className="billing_details">
-                                    <h2>billing details</h2>
+                                    
                                     <BillingForm />
+                                <ShippingForm/>
                                 </div>
+                                 
                             </div>
                             <div className="column">
                                 <div className="pay_method">

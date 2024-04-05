@@ -11,23 +11,25 @@ import SingalProduct from './components/Singal/SingalProduct'
 import "react-multi-carousel/lib/styles.css";
 import { ProProvider } from './components/ProductContext'
 import ProductListing from './components/Listing/ProductListing'
+import CheckoutProvider from './components/CheckoutContext'
 const App = () => {
   return (
     <CartProvider>
-    <ProProvider>
-      <Router basename="/Kidstoys">
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/products' element={<SingalProduct />} />
-          <Route path='/cart' element={<Cart/>} />
-          <Route path='/checkout' element={<Checkout/>} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/forgotpassword' element={<ForgotPassword />} />
-          <Route path='/order' element={<CustomerDashboard />} />
-          <Route path='/list' element={<ProductListing />} />
-
-        </Routes>
-      </Router>
+      <ProProvider>
+        <CheckoutProvider>
+          <Router basename="/Kidstoys">
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/products' element={<SingalProduct />} />
+              <Route path='/cart' element={<Cart />} />
+              <Route path='/checkout' element={<Checkout />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/forgotpassword' element={<ForgotPassword />} />
+              <Route path='/order' element={<CustomerDashboard />} />
+              <Route path='/list' element={<ProductListing />} />
+            </Routes>
+          </Router>
+        </CheckoutProvider>
       </ProProvider>
     </CartProvider>
   )

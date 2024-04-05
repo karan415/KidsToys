@@ -101,7 +101,9 @@ footer {
     .copy-right {
         padding: 10px;
     }
-
+    .flex_box.footer_boxes {
+        padding: 0px 30px;
+    }
     .copy-right p {
         padding: 0;
     }

@@ -28,7 +28,7 @@ section.checkout_page .flex_box {
     border-radius: 10px;
 }
 
-.billing_details {
+.billing_details form {
     box-shadow: 0px 0px 3px;
     padding: 20px;
     border-radius: 10px;
@@ -47,6 +47,7 @@ section.checkout_page .flex_box {
     border: 1px solid #ccc;
     margin: 10px 0px;
     border-radius: 7px;
+    font-size: 16px;
 }
 
 .images_box.flex_box img {
@@ -144,8 +145,8 @@ section.checkout_page .flex_box {
 }
 
 @media(max-width:992px) {
- 
-  
+
+
     section.checkout_page .col_60 {
         width: 100%;
     }
@@ -163,9 +164,11 @@ section.checkout_page .flex_box {
     .pay_method {
         padding: 12px;
     }
+
     section.checkout_page .flex_box {
         display: block;
     }
+
     .column {
         padding: 10px;
     }
@@ -203,7 +206,7 @@ section.checkout_page .flex_box {
 }
 
 @media(min-width:576px) and (max-width:992px) {
-  
+
 
     section.checkout_page {
         padding: 20px;
@@ -234,15 +237,26 @@ section.checkout_page .flex_box {
     }
 }
 
-@media(min-width:993px) and (max-width:1300px){
+@media(min-width:993px) and (max-width:1300px) {
     .billing_details .flex_box .col_50 label {
         font-size: 17px;
     }
+
     .order_details {
         padding: 8px;
     }
+
     section.checkout_page h2 {
         padding: 0px 0px 10px;
         font-size: 30px;
     }
+}
+
+.shipping_form {
+    margin-top: 50px;
+}
+.billing_details span {
+    color: red;
+    font-size: 14px;
+    font-family: 'Poppins';
 }
