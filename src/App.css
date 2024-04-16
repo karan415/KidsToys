@@ -57,14 +57,14 @@ header {
 
 header::after {
   content: '';
-  height: 50px;
+  height: 30px;
   width: 100%;
   position: absolute;
-  background-image: url(./components/images/HEADER__2.png);
+  background-image: url(./components/images/haederlayer.png);
   background-size: contain;
   background-position: center;
   left: 0;
-  bottom: -34px;
+  bottom: -24px;
   z-index: 9980;
 }
 
@@ -235,15 +235,14 @@ strong.light {
   font-weight: bold;
 }
 
-ul li,
-header span {
-  font-size: 20px;
-  color: #000;
-  font-family: "poppins";
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
+ul li, header span {
+    font-size: 18px;
+    color: #000;
+    font-family: "poppins";
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
 button.btn_pink {
@@ -255,7 +254,7 @@ button.btn_pink {
 }
 
 header li {
-  padding: 0px 10px;
+    padding: 0px 15px;
 }
 
 .search_box input {
@@ -389,7 +388,9 @@ button.btn_purple:hover {
 }
 
 nav ul li {
-  display: inline-block;
+    display: inline-block;
+    position: relative;
+    padding: 20px 15px;
 }
 
 /* header banner css end here */
@@ -607,4 +608,99 @@ a {
 }
 .product_content.col span.border button.btn_purple:hover span {
   color: black !important;
+}
+
+/* submenu css */
+.subchilds {
+    position: absolute;
+    background: #fff;
+    left: 0;
+    padding: 40px 20px;
+    float: left;
+    top: 67px;
+    z-index: 9999;
+    width: 820px;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 1px 0px 5px -2px;
+}
+
+.subchilds ul li {
+  display: flex;
+  font-weight: 600;
+  margin: 0px 0px !important;
+  padding: 0 12px 0px 0px !important;
+  width: 31%;
+  gap: 13px;
+}
+.subchilds ul {
+    justify-content: space-between;
+    gap: 25px 15px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+header ul li:hover .subchilds {
+  display: block;
+}
+
+.subchilds ul li a {
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: normal;
+}
+.subchilds ul li span {
+  display: block;
+  color: #ccc;
+  font-weight: normal;
+  font-size: 15px;
+  text-transform: math-auto;
+}
+
+.first>div {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 100%;
+  opacity: 0.5;
+  padding: 9px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.bg-pink {
+  background: #ff3b71;
+}
+
+.first svg {
+  font-size: 30px;
+  color: #ffff;
+}
+
+.bg-purple {
+  background: purple;
+}
+
+.bg-red {
+  background: red;
+}
+
+.bg-yellow {
+  background: yellow;
+}
+
+.bg-grey {
+  background: grey;
+}
+
+.bg-violet {
+  background: violet;
+}
+
+
+
+.subchilds ul li:hover .first>div {
+  opacity: 1;
 }

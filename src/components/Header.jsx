@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { FaStar, FaUser } from 'react-icons/fa'
 import { FiShoppingBag } from "react-icons/fi";
 import { useCart } from '../CartContext'
+import SubMenu from './SubMenu'
 const Header = () => {
   const { cartCount } = useCart();
   return (
@@ -26,16 +27,13 @@ const Header = () => {
                 <div className="nav_items">
                   <ul>
                     <li><Link to='/'>home</Link></li>
-                    <li>shop</li>
+                    <li><Link to='/list'>shop</Link></li>
                     <li> <Link to='/products'>products</Link></li>
-                    <li>blogs</li>
+                    <li>blogs
+                    
+                    </li>
                     <li>pages
-                      <div className="submenus d_none">
-                        <ul>
-                          <li>cart</li>
-                          <li>checkout</li>
-                        </ul>
-                      </div>
+                     <SubMenu/>
                     </li>
                   </ul>
                 </div>
