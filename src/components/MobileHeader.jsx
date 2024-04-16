@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import Logo from '../components/images/logo (2).png'
 import vector from './images/Vector (1).png'
-import { FaCaretDown } from 'react-icons/fa'
+import Menus from './Menus'
+
+
 const MobileHeader = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -22,21 +24,15 @@ const MobileHeader = () => {
 
           </div>
         </div>
-
-      </div>
-      {isNavOpen && (
-        <div className="toggle_items">
-          <div className="menues">
-            <ul>
-              <li>home</li>
-              <li>shop</li>
-              <li>products</li>
-              <li>blogs</li>
-              <li>pages</li>
-            </ul>
+        {isNavOpen && (
+          <div className="toggle_items">
+            <div className="menues">
+              <Menus/>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
+     
 
 
     </>

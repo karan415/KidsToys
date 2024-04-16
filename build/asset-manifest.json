@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/Kidstoys/static/css/main.c7946f92.css",
-    "main.js": "/Kidstoys/static/js/main.0df8277b.js",
+    "main.css": "/Kidstoys/static/css/main.110ed562.css",
+    "main.js": "/Kidstoys/static/js/main.90f9a066.js",
     "static/media/Banner.png": "/Kidstoys/static/media/Banner.a15ddf446eea317348c4.png",
     "static/media/teddy_girl.png": "/Kidstoys/static/media/teddy_girl.b635e4feced1b7020f93.png",
     "static/media/win_images.png": "/Kidstoys/static/media/win_images.637dae14763ed0e0f394.png",
     "static/media/new-teddy-bear.png": "/Kidstoys/static/media/new-teddy-bear.d65f6cc95eff2cc8bb73.png",
     "static/media/haeder_banner.png": "/Kidstoys/static/media/haeder_banner.371ebbb5ebccb4216cf6.png",
+    "static/media/haederlayer.png": "/Kidstoys/static/media/haederlayer.5fa22a7dfacc70ba2c33.png",
     "static/media/redteddy2.png": "/Kidstoys/static/media/redteddy2.25eeb2b8a5442e914913.png",
     "static/media/star_banner.png": "/Kidstoys/static/media/star_banner.c64f25e482735376b541.png",
     "static/media/new_in.png": "/Kidstoys/static/media/new_in.957c7cb89e46bd919feb.png",
@@ -51,14 +52,13 @@
     "static/media/preschool2.png": "/Kidstoys/static/media/preschool2.527dbfb7f0e078a678a8.png",
     "static/media/revicons.eot": "/Kidstoys/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/Kidstoys/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/HEADER__2.png": "/Kidstoys/static/media/HEADER__2.5fa6124da3aebca6eee3.png",
     "static/media/revicons.woff": "/Kidstoys/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Kidstoys/index.html",
-    "main.c7946f92.css.map": "/Kidstoys/static/css/main.c7946f92.css.map",
-    "main.0df8277b.js.map": "/Kidstoys/static/js/main.0df8277b.js.map"
+    "main.110ed562.css.map": "/Kidstoys/static/css/main.110ed562.css.map",
+    "main.90f9a066.js.map": "/Kidstoys/static/js/main.90f9a066.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7946f92.css",
-    "static/js/main.0df8277b.js"
+    "static/css/main.110ed562.css",
+    "static/js/main.90f9a066.js"
   ]
 }

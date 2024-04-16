@@ -389,7 +389,6 @@ button.btn_purple:hover {
 
 nav ul li {
     display: inline-block;
-    position: relative;
     padding: 20px 15px;
 }
 
@@ -456,7 +455,9 @@ a {
     height: 12px;
     bottom: -8px;
   }
-
+  header ul li a{
+    color: #fff ;
+   }
   .logo img {
     max-width: 106px;
   }
@@ -617,7 +618,6 @@ a {
     left: 0;
     padding: 40px 20px;
     float: left;
-    top: 67px;
     z-index: 9999;
     width: 820px;
     display: none;
@@ -628,7 +628,6 @@ a {
 .subchilds ul li {
   display: flex;
   font-weight: 600;
-  margin: 0px 0px !important;
   padding: 0 12px 0px 0px !important;
   width: 31%;
   gap: 13px;
@@ -703,4 +702,53 @@ header ul li:hover .subchilds {
 
 .subchilds ul li:hover .first>div {
   opacity: 1;
+}
+
+@media(max-width:575px){
+  .subchilds {
+    max-width: 96%;
+    padding: 20px;
+    margin: 0 auto !important;
+    left: 2%;
+}
+
+.subchilds ul {
+    display: block;
+}
+
+.subchilds ul li {
+    width: 100%;
+    margin: 29px 0px !important;
+}
+}
+@media(min-width:576px) and (max-width:992px){
+  .subchilds {
+    width: 97%;
+    left: 2%;
+}
+
+.subchilds ul {
+    flex-wrap: wrap;
+}
+
+.subchilds ul li {
+    width: 48%;
+}
+}
+
+@media(min-width:993px) and (max-width:1500px){
+  .subchilds {
+    width: 700px;
+    margin-top: 18px;
+}
+nav ul li{
+  position: static;
+}
+
+}
+.nav_items {
+  position: relative;
+}
+.subchilds {
+  margin-top: 20px;
 }

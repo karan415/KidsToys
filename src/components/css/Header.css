@@ -23,10 +23,10 @@
     .logo img {
         max-width: 140px;
     }
-    header li {
-        padding: 0px 6px;
-        font-size: 18px;
-    }
+   header li {
+    padding: 0px 6px !important;
+    font-size: 18px;
+}
     .search_box li {
         font-size: 20px;
         padding: 4px 7px;

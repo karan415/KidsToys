@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Logo from '../components/images/logo (2).png'
 import MobileHeader from './MobileHeader'
 import './css/Header.css'
@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 import { FaStar, FaUser } from 'react-icons/fa'
 import { FiShoppingBag } from "react-icons/fi";
 import { useCart } from '../CartContext'
-import SubMenu from './SubMenu'
+import Menus from './Menus'
+
 const Header = () => {
   const { cartCount } = useCart();
   return (
@@ -25,17 +26,7 @@ const Header = () => {
               </div>
               <div className="col_40">
                 <div className="nav_items">
-                  <ul>
-                    <li><Link to='/'>home</Link></li>
-                    <li><Link to='/list'>shop</Link></li>
-                    <li> <Link to='/products'>products</Link></li>
-                    <li>blogs
-                    
-                    </li>
-                    <li>pages
-                     <SubMenu/>
-                    </li>
-                  </ul>
+                  <Menus/>
                 </div>
               </div>
               <div className="col_33">
