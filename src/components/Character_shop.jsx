@@ -3,7 +3,7 @@ import './css/Shop.css'
 const Character_shop = () => {
     return (
         <>
-            <section className="character_shop">
+            <section  className="character_shop boxxx">
                 <div className="container-fluid">
                     <div className="row_box">
                         <div className="col star_bg">
