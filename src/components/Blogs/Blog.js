@@ -2,15 +2,20 @@ import React from 'react';
 import BlogData from './BlogData';
 import Footer from '../Footer';
 import Header from '../Header';
+import BlogSearch from './BlogSearch';
 
 const Blog = () => {
   return (
     <>
       <Header />
-      <section className='py_5'>
+      <section className='py_5 blogposts'>
         <div className="container">
-
-                <div className='grid-container'>
+          <div className='flex_box itemstart'>
+              <div className='col-30'>
+                <BlogSearch/>
+             
+              </div>
+              <div className='grid-container col-70'>
               {BlogData.map((curElm, index) => {
                 return (
                   <div className="grid-item border1 roundes over-hide mb-4" key={index}>
@@ -33,7 +38,7 @@ const Blog = () => {
                 );
               })}
               </div>
-          
+              </div>
         </div>
       </section>
       <Footer />

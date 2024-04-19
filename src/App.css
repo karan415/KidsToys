@@ -102,6 +102,13 @@ header::after {
 .col_60 {
   width: 60%;
 }
+.col-70{
+  width: 70%;
+}
+.col-30{
+  width:30%;
+}
+
 .mb-4 {
   margin: 20px 0;
 }
@@ -788,7 +795,10 @@ nav ul li{
   grid-gap: 20px;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(4,24%);
+  grid-template-columns: repeat(3,32%);
+}
+.itemstart{
+  align-items: start;
 }
 .grid-item {
   align-items: stretch;
@@ -815,4 +825,73 @@ nav ul li{
 }
 .pop{
   font-family: 'poppins';
+}
+.paddingtop20{
+  padding: 20px;
+}
+.catogary ul li {
+  padding: 10px 0;
+  text-transform: capitalize;
+  border-bottom: 1px solid;
+}
+
+.searchbar {
+  padding: 25px 10px;
+  background: #ec71ab;
+}
+
+.searchbar input {
+  border: none;
+  padding: 15px 10px;
+}
+
+.searchbar input[type="submit"] {
+  background: #a158b9;
+  color: #fff;
+}
+
+.catogary {
+  margin: 20px 0 0;
+}
+section.blogposts .col-30 {
+  padding-right: 50px;
+}
+@media(max-width:767px){
+  .grid-container.col-80 {
+    padding: 0 30px;
+}
+
+section.blogposts {
+    padding: 25px 10px;
+}
+
+section.blogposts .flex_box.itemstart {
+    display: block;
+}
+section.blogposts .col-30{
+  padding: 0;
+  width: 100%;
+}
+.grid-container {
+   
+    width: 100%;
+    grid-template-columns: repeat(1, 100%);
+}
+
+.paddingtop20 {
+    padding: 10px;
+}
+
+}
+
+@media(min-width:768px) and (max-width:1240px){
+  .grid-container {
+    grid-template-columns: repeat(2,48.5%);
+}
+section.blogposts .col-30{
+  padding-right: 10px;
+}
+section.py_5.blogposts {
+  padding: 30px 10px;
+}
 }
