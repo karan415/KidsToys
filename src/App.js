@@ -12,6 +12,8 @@ import "react-multi-carousel/lib/styles.css";
 import { ProProvider } from './components/ProductContext'
 import ProductListing from './components/Listing/ProductListing'
 import CheckoutProvider from './components/CheckoutContext'
+import Blog from './components/Blogs/Blog'
+
 const App = () => {
   return (
     <CartProvider>
@@ -27,6 +29,8 @@ const App = () => {
               <Route path='/forgotpassword' element={<ForgotPassword />} />
               <Route path='/order' element={<CustomerDashboard />} />
               <Route path='/list' element={<ProductListing />} />
+              <Route path='/blog' element={<Blog />} />
+
             </Routes>
           </Router>
         </CheckoutProvider>
