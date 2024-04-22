@@ -489,6 +489,15 @@ a {
     display: flex;
     justify-content: end;
   }
+  .contentblog.padding20 {
+    padding: 0 12px;
+}
+section.py_5.blogposts .contentblog h4 {
+  font-size: 18px;
+}
+section.py_5.blogposts .contentblog p {
+  font-size: 16px;
+}
 
   header {
     background: none;
@@ -528,6 +537,7 @@ a {
   .onlyMobile {
     display: block !important;
   }
+
 }
 
 @media(min-width:768px) and (max-width:1024px) {
@@ -860,7 +870,12 @@ section.blogposts .col-30 {
   .grid-container.col-80 {
     padding: 0 30px;
 }
-
+.searchbar input {
+  width: 75%;
+}
+.searchbar input[type="submit"] {
+width: 25%;
+}
 section.blogposts {
     padding: 25px 10px;
 }
@@ -893,5 +908,11 @@ section.blogposts .col-30{
 }
 section.py_5.blogposts {
   padding: 30px 10px;
+}
+.searchbar input {
+  border: none;
+  padding: 15px 10px;
+  width: 100%;
+  margin: 3px 0px;
 }
 }

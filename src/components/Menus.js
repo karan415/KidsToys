@@ -8,7 +8,7 @@ const Menus = () => {
                 <li><Link to='/'>home</Link></li>
                 <li><Link to='/list'>shop</Link></li>
                 <li> <Link to='/products'>products</Link></li>
-                <li>blogs
+                <li><Link to='/blog'>blogs</Link>
 
                 </li>
                 <li>pages
